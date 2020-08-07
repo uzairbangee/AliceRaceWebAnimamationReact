@@ -22,7 +22,6 @@ const Background1 = () => {
       });
 
     useEffect(() => {
-        console.log(speed);
         play ? getAnimation().play() : getAnimation().pause();
         if (speed < .8) {
             getAnimation().updatePlaybackRate(speed/2 * -1)
